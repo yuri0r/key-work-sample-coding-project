@@ -1,0 +1,57 @@
+{
+  "plugins": [
+    "react",
+    "react-hooks",
+    "jest",
+    "@typescript-eslint"
+  ],
+  "globals": {
+    "process": "readonly"
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "project": "./tsconfig.json",
+    "tsconfigRootDir": "."
+  },
+  "env": {
+    "es2020":  true,
+    "browser": true,
+    "node":    true,
+    "jest/globals": true,
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:import/typescript"
+  ],
+  "rules": {
+    "semi": ["error", "always"],
+    "indent": ["off", 4],
+    "object-curly-spacing": ["warn", "never"],
+    "no-extra-parens": ["warn", "all", {"ignoreJSX": "all"}],
+    "max-len": ["warn", { "code": 120 }],
+    "no-multi-spaces": "error",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/no-unused-prop-types": "warn",
+    "react/no-typos": "error",
+    "react/no-unused-state": "warn",
+    "react/self-closing-comp": "warn",
+    "react/no-access-state-in-setstate": "error",
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}

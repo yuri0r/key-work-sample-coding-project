@@ -1,0 +1,11 @@
+databaseChangeLog:
+   - changeSet:
+      id: 1
+      author: Peter-Suepfle
+      changes:
+         - sqlFile:
+            dbms: mysql, mariadb
+            encoding: utf8
+            path: db/changelog/data/001-schema.sql
+            splitStatements: true
+            stripComments: true
