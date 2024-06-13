@@ -21,7 +21,7 @@
     "es2020":  true,
     "browser": true,
     "node":    true,
-    "jest/globals": true,
+    "jest/globals": true
   },
   "extends": [
     "eslint:recommended",

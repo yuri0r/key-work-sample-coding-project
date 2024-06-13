@@ -1,4 +1,3 @@
-import * as React from 'react';
 import Container from '@mui/material/Container';
 import {Button, TextField} from "@mui/material";
 import Box from "@mui/material/Box";
