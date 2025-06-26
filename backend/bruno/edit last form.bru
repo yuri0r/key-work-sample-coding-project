@@ -1,0 +1,28 @@
+meta {
+  name: edit last form
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:8080/api/form
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "firstName": "John",
+    "lastName": "Doe",
+    "email": "john.doe@example.com",
+    "phone": "+1234567890"
+  }
+}
+
+vars:post-response {
+  last_id: res.body
+}
+
+script:post-response {
+  console.log(res)
+}

@@ -1,0 +1,29 @@
+meta {
+  name: new form
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{base_url}}/form
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "id":"{{last_id}}",
+    "firstName": "John",
+    "lastName": "ex",
+    "email": "john.doe@example.com",
+    "phone": "+1234567890"
+  }
+}
+
+vars:post-response {
+  last_id: res.body
+}
+
+script:post-response {
+  console.log(res)
+}
