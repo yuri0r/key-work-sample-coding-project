@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  mysql-db:
+    image: mysql
+    container_name: mysql-db
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+      MYSQL_DATABASE: backend
+    ports:
+      - "3306:3306"
