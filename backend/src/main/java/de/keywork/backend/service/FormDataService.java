@@ -34,6 +34,7 @@ public class FormDataService {
         formData.setLastName(dto.getLastName());
         formData.setEmail(dto.getEmail());
         formData.setPhone(dto.getPhone());
+        formData.setFavoriteColour(dto.getFavoriteColour());
         formData = formDataRepository.save(formData);
         return formData.getId();
     }
@@ -46,6 +47,7 @@ public class FormDataService {
         dto.setFirstName(formData.getFirstName());
         dto.setLastName(formData.getLastName());
         dto.setPhone(formData.getPhone());
+        dto.setFavoriteColour(formData.getFavoriteColour());
         dto.setId(formData.getId());
 
         return dto;

@@ -7,7 +7,9 @@ Do as many tasks as possible from the following list
   - added dockerfile to have mysql db 
   - added [bruno](https://docs.usebruno.com/) to work with the backend (its a free oss alternative to postman, and pretty cool!)
 - [ ] There are bugs - find and fix them
-- [ ] To display better ads we need more data - extend the form with more inputs and store the data in the database
+  - do along the way
+- [x] To display better ads we need more data - extend the form with more inputs and store the data in the database
+  - fav color will do?
 - [ ] At the moment anyone can use our app - implement authentication with a registration process
 - [ ] Filling in the same data over and over again is annoying - prefill some of the form from the login data
 - [ ] Who wrote that code? - Improve the code quality
