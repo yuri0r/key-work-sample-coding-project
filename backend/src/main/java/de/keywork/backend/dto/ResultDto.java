@@ -1,4 +1,4 @@
 package de.keywork.backend.dto;
 
-public record ResultDto(String name, long formId) {
+public record ResultDto(String name, long formId, String description) {
 }

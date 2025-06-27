@@ -23,9 +23,11 @@ Do as many tasks as possible from the following list
 - [ ] Who implemented that ugly UI? - make it beautiful
 
 # Backend
-- [ ] To get more people to use our app we need a good jackpot - add an entity + table for the price and fill it with different jackpots during the next startup
-- [ ] Fetch a random Jackpot
-- [ ] Something is wrong with the JackpotHistory - save formdata and a reference to the jackpot entity in the database
-- [ ] Be gone hackers! - Verify in the backend if the user is allowed to get a jackpot
+- [x] To get more people to use our app we need a good jackpot - add an entity + table for the price and fill it with different jackpots during the next startup
+- [x] Fetch a random Jackpot
+- [x] Something is wrong with the JackpotHistory - save formdata and a reference to the jackpot entity in the database
+- [x] Be gone hackers! - Verify in the backend if the user is allowed to get a jackpot
+  - technically needs auth from fullstack, instead checked for retries na dif "user" aka formdata exists
 - [ ] The user can just fill any game in the frontend and the result is lost - add the full mvc for the game inputs
+  - this confuses me since i never looked at the frontend
 - [ ] What is currently broken and what is working? - Implement some junit tests

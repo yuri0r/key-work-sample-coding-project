@@ -1,0 +1,11 @@
+meta {
+  name: result
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{base_url}}/result/{{last_id}}
+  body: none
+  auth: inherit
+}

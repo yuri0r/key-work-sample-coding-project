@@ -19,3 +19,13 @@ databaseChangeLog:
              path: db/changelog/data/002-schema.sql
              splitStatements: true
              stripComments: true
+   - changeSet:
+       id: 4
+       author: Mack-Trinz
+       changes:
+         - sqlFile:
+             dbms: mysql
+             encoding: utf8
+             path: db/changelog/data/004-schema.sql
+             splitStatements: true
+             stripComments: true
