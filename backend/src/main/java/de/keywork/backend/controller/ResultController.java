@@ -1,7 +1,6 @@
 package de.keywork.backend.controller;
 
 import de.keywork.backend.dto.ResultDto;
-import de.keywork.backend.entity.Jackpot;
 import de.keywork.backend.service.ResultService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
